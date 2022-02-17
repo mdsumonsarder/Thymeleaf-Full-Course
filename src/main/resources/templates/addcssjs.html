@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Add CSS and JS to Thymeleaf</title><title>Title</title>
+
+     <!--Css File Adding-->
+    <link th:href="@{/css/index.css}" rel="stylesheet" />
+</head>
+<body>
+
+<h2>Carefully Styled Heading</h2>
+
+<p>
+    This is text on which we want to apply <strong>very special</strong> styling.
+</p>
+
+<button type="button" th:onclick="show()">Show Message</button>
+
+<!--Js Fill Adding-->
+<script type="text/javascript" th:src="@{/js/index.js}"></script>
+
+</body>
+</html>
